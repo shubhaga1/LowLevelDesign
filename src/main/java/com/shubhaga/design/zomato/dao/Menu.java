@@ -1,4 +1,4 @@
-package com.shubhaga.zomato.dao;
+package com.shubhaga.design.zomato.dao;
 
 import java.util.List;
 

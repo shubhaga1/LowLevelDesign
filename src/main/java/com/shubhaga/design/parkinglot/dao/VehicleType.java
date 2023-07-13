@@ -1,4 +1,4 @@
-package com.shubhaga.parkinglot.dao;
+package com.shubhaga.design.parkinglot.dao;
 
 public enum VehicleType {
     TWO_WHEELER,

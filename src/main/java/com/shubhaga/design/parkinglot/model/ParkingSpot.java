@@ -1,7 +1,7 @@
-package com.shubhaga.parkinglot.model;
+package com.shubhaga.design.parkinglot.model;
 
-import com.shubhaga.parkinglot.dao.Vehicle;
-import com.shubhaga.parkinglot.model.impl.TwoWheelerSpot;
+import com.shubhaga.design.parkinglot.dao.Vehicle;
+import com.shubhaga.design.parkinglot.model.impl.TwoWheelerSpot;
 
 public class ParkingSpot {
     Vehicle vehicle;

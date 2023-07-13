@@ -1,6 +1,6 @@
-package com.shubhaga.parkinglot.controller;
+package com.shubhaga.design.parkinglot.controller;
 
-import com.shubhaga.parkinglot.model.ParkingSpot;
+import com.shubhaga.design.parkinglot.model.ParkingSpot;
 
 import java.util.List;
 
