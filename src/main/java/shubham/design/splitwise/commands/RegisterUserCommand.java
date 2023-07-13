@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import javax.inject.Inject;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class RegisterUserCommand implements Command {
@@ -25,7 +26,7 @@ public class RegisterUserCommand implements Command {
 
     @Override
     public boolean parse(String commandLine) {
-        List<String> commandTokens = Arrays.stream(commandLine.split(" ")).toList();
+        List<String> commandTokens = Arrays.stream(commandLine.split(" ")).collect(Collectors.toList());
         if (commandTokens.size() != 4) {
             LOGGER.info("This is not a Register user command");
             return false;
@@ -42,7 +43,7 @@ public class RegisterUserCommand implements Command {
     @Override
     public void execute(String commandLine) {
         LOGGER.info("input command : " + commandLine);
-        List<String> commandTokens = Arrays.stream(commandLine.split(" ")).toList();
+        List<String> commandTokens = Arrays.stream(commandLine.split(" ")).collect(Collectors.toList());
 
         RegisterUserRequestDto request = new RegisterUserRequestDto();
         String userName = commandTokens.get(0);

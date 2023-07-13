@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class UpdateProfileCommand implements Command {
@@ -14,7 +15,7 @@ public class UpdateProfileCommand implements Command {
     @Override
     public boolean parse(String commandLine) {
 
-        List<String> commandTokens = Arrays.stream(commandLine.split(" ")).toList();
+        List<String> commandTokens = Arrays.stream(commandLine.split(" ")).collect(Collectors.toList());;
         if (commandTokens.size() != 3) {
             LOGGER.info("This is not UpdateProfileCommand .");
             return false;

@@ -5,3 +5,9 @@ public class Address {
     String street, district, state, country;
     int pincode;
 }
+
+class Account {
+    String username;
+    String password;
+    Address address;
+}

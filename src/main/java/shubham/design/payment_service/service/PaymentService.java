@@ -3,12 +3,12 @@ package shubham.design.payment_service.service;
 import shubham.design.payment_service.entity.Payment;
 import shubham.design.payment_service.repository.PaymentRepository;
 import org.springframework.stereotype.Service;
-import javax.inject.Inject;
+
 import java.util.UUID;
 
 @Service
 public class PaymentService {
-    @Inject
+
     private PaymentRepository paymentRepository;
 
     public Payment doPayment(Payment payment) {
